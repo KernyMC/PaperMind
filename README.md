@@ -29,8 +29,7 @@ Una herramienta poderosa que combina la gestión bibliográfica de Zotero con la
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/biblioteca-academica-unificada.git
-cd biblioteca-academica-unificada
+git clone https://github.com/KernyMC/PaperMind.git
 ```
 
 ### 2. Crear entorno virtual
