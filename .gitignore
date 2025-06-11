@@ -1,7 +1,6 @@
 # Archivos de configuración sensibles
 .env
-.env.local
-.env.production
+
 
 # API Keys y configuraciones privadas
 config.local.json

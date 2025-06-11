@@ -1,39 +1,59 @@
-# 📚 Biblioteca Académica Unificada: Zotero + Paper-QA
+# 🧠 PaperMind: Biblioteca Académica Inteligente
 
-Una herramienta poderosa que combina la gestión bibliográfica de Zotero con las capacidades de análisis inteligente de Paper-QA, permitiendo consultas avanzadas sobre tu biblioteca académica completa.
+**La evolución de la gestión bibliográfica académica**
+
+Una herramienta revolucionaria que combina la gestión bibliográfica de Zotero con las capacidades de análisis inteligente de Paper-QA, permitiendo consultas avanzadas con IA sobre tu biblioteca académica completa.
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Paper-QA](https://img.shields.io/badge/Paper--QA-v4.9.0-orange.svg)
+![Version](https://img.shields.io/badge/PaperMind-v1.0-purple.svg)
+
+## 🚀 ¿Qué es PaperMind?
+
+PaperMind es la próxima generación de herramientas para investigadores académicos. Combina la robusta gestión bibliográfica de Zotero con la inteligencia artificial de Paper-QA para crear una experiencia de investigación completamente nueva.
+
+### 🧠 **Inteligencia Artificial Aplicada**
+- **Consultas en lenguaje natural**: Pregunta como hablarías con un colega
+- **Análisis semántico avanzado**: Encuentra conexiones que no sabías que existían
+- **Síntesis automática**: Combina información de múltiples fuentes
+- **Razonamiento multi-hop**: Conecta ideas a través de diferentes papers
+
+### 📚 **Biblioteca Unificada**
+- **Integración dual**: Zotero + papers locales en un solo lugar
+- **Metadatos enriquecidos**: Información completa automática
+- **Organización inteligente**: Colecciones y etiquetas sincronizadas
+- **Identificación de origen**: Transparencia total en las fuentes
 
 ## 🎯 Características Principales
 
-### 📚 **Biblioteca Unificada**
-- **Integración dual**: Combina papers de Zotero + papers locales
-- **Consultas simultáneas**: Una pregunta, múltiples fuentes
-- **Identificación de origen**: Distingue claramente fuentes Zotero vs locales
-
 ### 🔗 **Gestión Automática con Zotero**
-- **Metadatos enriquecidos**: Título, autores, DOI, año automático
 - **Descarga inteligente**: PDFs automáticos desde DOI/PMID
-- **Organización avanzada**: Colecciones y etiquetas de Zotero
-- **Sincronización bidireccional**: Zotero ↔ Paper-QA
+- **Metadatos normalizados**: Título, autores, DOI, año automático
+- **Sincronización bidireccional**: Zotero ↔ PaperMind
+- **Organización avanzada**: Colecciones y etiquetas preservadas
 
-### 🤖 **Análisis Inteligente con Paper-QA v4**
-- **Búsqueda semántica**: Encuentra información relevante sin palabras exactas
-- **Respuestas contextualizadas**: Citas automáticas con páginas específicas
-- **Multi-hop reasoning**: Conecta información de múltiples fuentes
-- **Evaluación de evidencia**: Rankea y filtra la información más relevante
+### 🤖 **Análisis Inteligente con IA**
+- **Búsqueda semántica**: Sin necesidad de palabras exactas
+- **Respuestas contextualizadas**: Con citaciones específicas
+- **Evaluación de evidencia**: Ranking automático de relevancia
+- **Síntesis multi-documento**: Combina información de múltiples fuentes
+
+### 🎯 **Experiencia de Usuario Superior**
+- **Interfaz web moderna**: Diseño intuitivo y responsivo
+- **Consultas filtradas**: Por colección, etiqueta o fuente
+- **Respuestas enriquecidas**: Metadatos completos y referencias
+- **Feedback en tiempo real**: Estado de todas las operaciones
 
 ## 🚀 Instalación Rápida
 
-### 1. Clonar el repositorio
+### 1. Clonar PaperMind
 ```bash
-git clone https://github.com/tu-usuario/biblioteca-academica-unificada.git
-cd biblioteca-academica-unificada
+git clone https://github.com/tu-usuario/papermind.git
+cd papermind
 ```
 
-### 2. Crear entorno virtual
+### 2. Configurar entorno
 ```bash
 # Windows
 python -m venv venv
@@ -51,170 +71,263 @@ pip install -r requirements.txt
 
 ### 4. Configurar API Keys
 ```bash
-# Copiar archivo de ejemplo
+# Crear archivo de configuración
 cp .env.example .env
-
-# Editar .env con tus API keys
-notepad .env  # Windows
-nano .env     # Linux/macOS
 ```
 
-**Contenido del archivo .env:**
+**Edita tu archivo .env:**
 ```env
-# OpenAI API Key (requerida)
+# OpenAI API Key (requerida para IA)
 OPENAI_API_KEY=tu_openai_api_key_aqui
 
-# Zotero API Key (requerida)
+# Zotero API Key (requerida para sincronización)
 ZOTERO_API_KEY=tu_zotero_api_key_aqui
+
+# Directorios personalizados (opcional)
+PAPERS_DIR=./zotero_papers
+LOCAL_PAPERS_DIR=./mis_papers
 ```
 
-### 5. Ejecutar la aplicación
+### 5. ¡Lanzar PaperMind!
 ```bash
 python app_zotero_paperqa.py
 ```
 
-Accede a: **http://localhost:7868**
+🌐 **Accede a:** http://localhost:7860
 
 ## 🔑 Obtener API Keys
 
 ### OpenAI API Key
-1. Ve a [OpenAI Platform](https://platform.openai.com/api-keys)
-2. Crea una cuenta o inicia sesión
-3. Genera una nueva API key
-4. Copia la key que comienza con `sk-proj-...`
+1. 🌐 Ve a [OpenAI Platform](https://platform.openai.com/api-keys)
+2. 🔐 Crea cuenta o inicia sesión
+3. ⚡ Genera nueva API key
+4. 📋 Copia la key `sk-proj-...`
 
 ### Zotero API Key
-1. Ve a [Zotero Settings](https://www.zotero.org/settings/keys)
-2. Inicia sesión en tu cuenta Zotero
-3. Crea una nueva private key
-4. Permite acceso de lectura/escritura a tu biblioteca
-5. Copia la key generada
+1. 🌐 Ve a [Zotero Settings](https://www.zotero.org/settings/keys)
+2. 🔐 Inicia sesión en Zotero
+3. 🔑 Crea private key
+4. ✅ Permite acceso lectura/escritura
+5. 📋 Copia la key generada
 
-## 📖 Guía de Uso
+## 📖 Guía de Uso Completa
 
 ### 🔧 **Paso 1: Configuración Inicial**
-1. **Detectar Usuario Zotero**: El sistema identifica automáticamente tu ID
-2. **Obtener Colecciones**: Carga tus colecciones de Zotero para organización
-
-### ➕ **Paso 2: Añadir Papers**
-- **Por DOI/PMID**: Introduce identificadores para descarga automática
-- **Metadatos automáticos**: Título, autores, año obtenidos de Crossref
-- **Organización**: Asigna a colecciones específicas de Zotero
-
-### 🔄 **Paso 3: Sincronización**
-1. **Sincronizar Zotero**: Conecta tu biblioteca Zotero con Paper-QA
-2. **Cargar Biblioteca Completa**: Incluye papers locales + Zotero
-3. **Verificar carga**: Confirma que todos los papers están disponibles
-
-### 🎯 **Paso 4: Consultas Inteligentes**
-- **Preguntas naturales**: Usa lenguaje natural para tus consultas
-- **Filtros avanzados**: Por colección, etiqueta o fuente
-- **Respuestas enriquecidas**: Con citaciones automáticas y metadatos
-
-## 💡 Ejemplos de Consultas
-
-### Consultas Metodológicas
 ```
-¿Qué metodologías de investigación aparecen en mis papers de genética?
+1. 🔍 Detectar Usuario Zotero → Identifica automáticamente tu ID
+2. 📚 Obtener Colecciones → Carga tus colecciones para organización
 ```
 
-### Búsquedas Temáticas
+### ➕ **Paso 2: Alimentar tu Biblioteca**
 ```
-¿Cuáles son los principales hallazgos sobre CRISPR en mis artículos de 2023?
+Opción A: Por DOI/PMID
+- Introduce: 10.1038/nature12373
+- PaperMind descarga automáticamente PDF + metadatos
+
+Opción B: Papers locales
+- Coloca PDFs en: ./mis_papers/
+- PaperMind los detecta automáticamente
 ```
 
-### Análisis Comparativo
+### 🔄 **Paso 3: Sincronización Inteligente**
 ```
-¿Qué diferencias metodológicas hay entre mis papers cualitativos y cuantitativos?
+1. 🔄 Sincronizar Zotero → Conecta biblioteca Zotero
+2. 📚 Cargar Biblioteca Completa → Incluye locales + Zotero
+3. ✅ Verificar → Confirma carga exitosa
 ```
 
-### Búsquedas de Tendencias
+### 🧠 **Paso 4: Consultas con IA**
+```
+🎯 Haz preguntas en lenguaje natural:
+- "¿Qué metodologías aparecen en mis papers de 2023?"
+- "¿Cuáles son las tendencias en mi área de investigación?"
+- "¿Qué papers contradicen la hipótesis X?"
+```
+
+## 💡 Ejemplos de Consultas Avanzadas
+
+### 🔬 **Análisis Metodológico**
+```
+¿Qué metodologías de investigación cualitativa aparecen en mis papers de ciencias sociales?
+```
+
+### 📊 **Búsqueda de Tendencias**
 ```
 ¿Cómo ha evolucionado la investigación en IA según mis papers de los últimos 5 años?
 ```
 
-## 📁 Estructura del Proyecto
+### 🔍 **Análisis Comparativo**
+```
+¿Qué diferencias encuentras entre los enfoques metodológicos de mis papers europeos vs americanos?
+```
+
+### 🎯 **Síntesis de Conocimiento**
+```
+¿Cuáles son los principales hallazgos sobre CRISPR en mi colección de genética molecular?
+```
+
+### 🔗 **Conexiones Interdisciplinarias**
+```
+¿Qué conexiones puedes encontrar entre mis papers de psicología cognitiva y neurociencias?
+```
+
+## 📁 Arquitectura del Proyecto
 
 ```
-biblioteca-academica-unificada/
-├── app_zotero_paperqa.py      # Aplicación principal
-├── requirements.txt           # Dependencias Python
-├── .env.example              # Plantilla configuración
-├── .gitignore               # Archivos ignorados por Git
-├── README.md                # Este archivo
-├── zotero_papers/           # Papers descargados de Zotero (ignorado)
-├── mis_papers/             # Papers locales (ignorado)
-└── .env                    # Configuración personal (ignorado)
+papermind/
+├── 🧠 app_zotero_paperqa.py    # Núcleo de PaperMind
+├── 📦 requirements.txt         # Dependencias IA + Zotero
+├── ⚙️  .env.example           # Plantilla configuración
+├── 📖 README.md               # Esta documentación
+├── 📄 LICENSE                 # Licencia MIT
+├── 🔍 .gitignore             # Archivos ignorados
+├── 📚 zotero_papers/          # Papers Zotero (auto-descarga)
+├── 📁 mis_papers/            # Papers locales (manual)
+└── 🔐 .env                   # Tu configuración personal
 ```
 
 ## 🛠️ Configuración Avanzada
 
-### Directorios Personalizados
-Puedes personalizar las rutas en tu archivo `.env`:
+### 🎛️ **Personalización de Directorios**
 ```env
+# En tu archivo .env
 PAPERS_DIR=./mi_biblioteca_zotero
-LOCAL_PAPERS_DIR=./mis_documentos_locales
+LOCAL_PAPERS_DIR=./documentos_investigacion
 ```
 
-### Modelos de IA Alternativos
-El sistema usa `gpt-4o-mini` por defecto, pero puedes configurar otros modelos OpenAI editando la línea:
+### 🤖 **Modelos de IA Alternativos**
 ```python
-self.docs = Docs(llm="gpt-4o", summary_llm="gpt-4o")  # Modelo más potente
+# En app_zotero_paperqa.py línea ~34
+self.docs = Docs(
+    llm="gpt-4o",           # Modelo más potente
+    summary_llm="gpt-4o"    # Para resúmenes detallados
+)
 ```
 
-## 🔍 Solución de Problemas
+### 🌐 **Configuración de Red**
+```python
+# Cambiar puerto si está ocupado
+demo.launch(
+    share=False, 
+    server_name="localhost", 
+    server_port=7861  # Puerto alternativo
+)
+```
 
-### Error: API Key no encontrada
+## 🔧 Solución de Problemas
+
+### ❌ **Error: API Key no encontrada**
 ```bash
-# Verifica que el archivo .env existe y tiene el formato correcto
+# Verificar archivo .env
 cat .env  # Linux/macOS
 type .env # Windows
+
+# Debe contener:
+OPENAI_API_KEY=sk-proj-...
+ZOTERO_API_KEY=...
 ```
 
-### Error: No se pueden cargar papers
+### ❌ **Error: No se pueden cargar papers**
 ```bash
-# Verifica que los directorios existen
-ls zotero_papers/     # Linux/macOS
-ls mis_papers/        # Linux/macOS
-dir zotero_papers\    # Windows
-dir mis_papers\       # Windows
+# Verificar directorios
+ls -la zotero_papers/  # Linux/macOS
+ls -la mis_papers/     # Linux/macOS
+dir zotero_papers\     # Windows
+dir mis_papers\        # Windows
 ```
 
-### Puerto 7868 ocupado
+### ❌ **Puerto ocupado**
 ```python
-# Cambia el puerto en la última línea del archivo
-demo.launch(share=False, server_name="localhost", server_port=7869)
+# Cambiar puerto en última línea
+demo.launch(server_port=7861)
 ```
 
-## 🤝 Contribuir
+### ❌ **Problemas de conexión Zotero**
+1. ✅ Verificar API key en Zotero.org
+2. ✅ Comprobar permisos de lectura/escritura
+3. ✅ Probar conexión manualmente
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`)
-3. Commit tus cambios (`git commit -am 'Agrega nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/nueva-funcionalidad`)
-5. Abre un Pull Request
+## 🤝 Contribuir a PaperMind
+
+¡PaperMind es un proyecto en evolución! Tu contribución es bienvenida:
+
+1. 🍴 **Fork** el proyecto
+2. 🌿 **Crea** rama feature (`git checkout -b feature/nueva-funcionalidad`)
+3. 💾 **Commit** cambios (`git commit -am 'Agrega: nueva funcionalidad increíble'`)
+4. 📤 **Push** rama (`git push origin feature/nueva-funcionalidad`)
+5. 🔃 **Abre** Pull Request
+
+### 🎯 **Áreas de Contribución**
+- 🤖 Mejoras en algoritmos IA
+- 🎨 Diseño de interfaz
+- 📊 Nuevas funcionalidades
+- 🐛 Corrección de bugs
+- 📖 Documentación
+- 🌐 Internacionalización
+
+## 📊 Estadísticas del Proyecto
+
+| Métrica | Valor |
+|---------|-------|
+| 🐍 **Lenguaje** | Python 3.10+ |
+| 📦 **Dependencias** | 6 principales |
+| 🧩 **Módulos** | 4 integrados |
+| 🌐 **Interfaz** | Web (Gradio) |
+| 🔗 **APIs** | OpenAI + Zotero + Crossref |
+| 📈 **Versión** | v1.0 |
+
+## 🏆 Casos de Uso Exitosos
+
+### 👨‍🎓 **Estudiantes de Doctorado**
+- Síntesis automática de literatura
+- Identificación de gaps de investigación
+- Análisis de metodologías emergentes
+
+### 👩‍🔬 **Investigadores Senior**
+- Review sistemáticos acelerados
+- Conexiones interdisciplinarias
+- Gestión de grandes corpus
+
+### 👨‍🏫 **Profesores Universitarios**
+- Preparación de cursos basada en evidencia
+- Actualización curricular continua
+- Mentoring estudiantil mejorado
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
+PaperMind está licenciado bajo **MIT License**. Ver `LICENSE` para detalles completos.
 
-## 🙏 Agradecimientos
+## 🙏 Agradecimientos y Tecnologías
 
-- **[Paper-QA](https://github.com/Future-House/paper-qa)**: Framework de análisis de papers con IA
-- **[Zotero](https://www.zotero.org/)**: Gestión bibliográfica de código abierto
-- **[Gradio](https://gradio.app/)**: Interfaz web interactiva
-- **[OpenAI](https://openai.com/)**: Modelos de lenguaje avanzados
+PaperMind no sería posible sin estas increíbles tecnologías:
 
-## 📊 Métricas del Proyecto
+- 🤖 **[Paper-QA](https://github.com/Future-House/paper-qa)** - Motor de análisis IA para papers académicos
+- 📚 **[Zotero](https://www.zotero.org/)** - Gestión bibliográfica de código abierto
+- 🎨 **[Gradio](https://gradio.app/)** - Interfaces web para ML/IA
+- 🧠 **[OpenAI](https://openai.com/)** - Modelos de lenguaje avanzados
+- 🔍 **[Crossref](https://www.crossref.org/)** - Metadatos académicos globales
 
-- **Lenguaje**: Python 3.10+
-- **Dependencias**: 6 principales
-- **Funcionalidades**: 4 módulos integrados
-- **Interfaz**: Web (Gradio)
-- **APIs**: OpenAI + Zotero + Crossref
+## 📞 Soporte y Comunidad
+
+### 💬 **¿Necesitas ayuda?**
+- 🐛 **Bugs**: [Reportar issue](https://github.com/tu-usuario/papermind/issues)
+- 💡 **Sugerencias**: [Discussions](https://github.com/tu-usuario/papermind/discussions)
+- 📧 **Contacto directo**: papermind@tu-email.com
+
+### 🌟 **¡Síguenos!**
+- ⭐ **Dale estrella** al proyecto si te resulta útil
+- 🐦 **Comparte** en redes sociales
+- 📢 **Recomienda** a colegas investigadores
 
 ---
 
-**¿Preguntas o sugerencias?** Abre un [issue](https://github.com/tu-usuario/biblioteca-academica-unificada/issues) o contacta al desarrollador.
+<div align="center">
 
-⭐ **¡Si este proyecto te resulta útil, dale una estrella!** 
+### 🚀 **PaperMind v1.0** 
+*Potenciando la investigación académica con IA desde 2024*
+
+**Desarrollado con ❤️ para la comunidad académica mundial**
+
+[🌟 Star](https://github.com/tu-usuario/papermind) | [🐛 Issues](https://github.com/tu-usuario/papermind/issues) | [💡 Discussions](https://github.com/tu-usuario/papermind/discussions) | [📖 Docs](https://github.com/tu-usuario/papermind/wiki)
+
+</div> 

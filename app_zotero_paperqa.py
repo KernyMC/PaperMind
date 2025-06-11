@@ -442,7 +442,7 @@ class ZoteroPaperQAIntegration:
 - 📚 **Metadatos enriquecidos** donde disponibles
 - 🎯 **Respuesta contextualizada** con fuentes identificadas
 
-*Respuesta generada por Zotero + Paper-QA v4 - Biblioteca Académica Unificada*
+*Respuesta generada por PaperMind v1.0 - Biblioteca Académica Inteligente*
 """
             
             return formatted_response
@@ -500,9 +500,9 @@ def ask_with_filters(question, collection, tag):
         return f"❌ Error: {str(e)}"
 
 # Interfaz Gradio
-with gr.Blocks(title="Biblioteca Académica Unificada", theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 📚 Biblioteca Académica Unificada: Zotero + Papers Locales")
-    gr.Markdown("*Integración completa: consulta papers de Zotero y tu biblioteca local simultáneamente*")
+with gr.Blocks(title="PaperMind - Biblioteca Académica Inteligente", theme=gr.themes.Soft()) as demo:
+    gr.Markdown("# 🧠 PaperMind: Biblioteca Académica Inteligente")
+    gr.Markdown("*Zotero + Papers Locales + IA: La evolución de la gestión bibliográfica académica*")
     
     # Configuración Zotero
     with gr.Tab("🔧 Configuración Zotero"):
@@ -576,7 +576,7 @@ with gr.Blocks(title="Biblioteca Académica Unificada", theme=gr.themes.Soft()) 
         question_input.submit(fn=ask_with_filters, inputs=[question_input, filter_collection, filter_tag], outputs=[answer_output])
     
     # Información del sistema
-    gr.Markdown(f"""
+    gr.Markdown(f"""    
     ### 🔬 Características del Sistema:
     - **📚 Biblioteca unificada**: Combina papers Zotero + papers locales
     - **🔗 Gestión automática**: Metadatos normalizados desde Crossref
@@ -601,7 +601,16 @@ with gr.Blocks(title="Biblioteca Académica Unificada", theme=gr.themes.Soft()) 
     - ✅ **Flexibilidad**: Mantén papers locales separados de Zotero
     - ✅ **Metadatos enriquecidos**: Papers Zotero con información completa
     - ✅ **Identificación clara**: Distingue origen de cada respuesta
+    
+    ---
+    
+    ### 👨‍💻 Desarrollado por
+    **PaperMind v1.0** - Creado con ❤️ por **{os.getenv('USER', 'Usuario')}**
+    
+    *🚀 Potenciando la investigación académica con IA desde 2024*
+    
+    📧 ¿Sugerencias o mejoras? ¡Abre un issue en el repositorio!
     """)
 
 if __name__ == "__main__":
-    demo.launch(share=False, server_name="localhost", server_port=7868) 
+    demo.launch(share=False, server_name="localhost", server_port=7860) 
