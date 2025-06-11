@@ -49,8 +49,8 @@ PaperMind es la próxima generación de herramientas para investigadores académ
 
 ### 1. Clonar PaperMind
 ```bash
-git clone https://github.com/tu-usuario/papermind.git
-cd papermind
+git clone https://github.com/KernyMC/PaperMind.git
+cd PaperMind
 ```
 
 ### 2. Configurar entorno
@@ -310,9 +310,9 @@ PaperMind no sería posible sin estas increíbles tecnologías:
 ## 📞 Soporte y Comunidad
 
 ### 💬 **¿Necesitas ayuda?**
-- 🐛 **Bugs**: [Reportar issue](https://github.com/tu-usuario/papermind/issues)
-- 💡 **Sugerencias**: [Discussions](https://github.com/tu-usuario/papermind/discussions)
-- 📧 **Contacto directo**: papermind@tu-email.com
+- 🐛 **Bugs**: [Reportar issue](https://github.com/KernyMC/PaperMind/issues)
+- 💡 **Sugerencias**: [Discussions](https://github.com/KernyMC/PaperMind/discussions)
+- 📧 **Contacto directo**: papermind@kernels.dev
 
 ### 🌟 **¡Síguenos!**
 - ⭐ **Dale estrella** al proyecto si te resulta útil
@@ -323,11 +323,15 @@ PaperMind no sería posible sin estas increíbles tecnologías:
 
 <div align="center">
 
+<<<<<<< HEAD
 ### 🚀 **PaperMind v1.0** 
 *Potenciando la investigación académica con IA desde 2024*
 
 **Desarrollado con ❤️ para la comunidad académica mundial**
 
-[🌟 Star](https://github.com/tu-usuario/papermind) | [🐛 Issues](https://github.com/tu-usuario/papermind/issues) | [💡 Discussions](https://github.com/tu-usuario/papermind/discussions) | [📖 Docs](https://github.com/tu-usuario/papermind/wiki)
+[🌟 Star](https://github.com/KernyMC/PaperMind) | [🐛 Issues](https://github.com/KernyMC/PaperMind/issues) | [💡 Discussions](https://github.com/KernyMC/PaperMind/discussions) | [📖 Docs](https://github.com/KernyMC/PaperMind/wiki)
 
 </div> 
+=======
+⭐ **¡Si este proyecto te resulta útil, dale una estrella!** 
+>>>>>>> 1ba901e4e1cf21318a3f1ba094b04cde14466dcd
