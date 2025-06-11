@@ -307,13 +307,6 @@ PaperMind no sería posible sin estas increíbles tecnologías:
 - 🧠 **[OpenAI](https://openai.com/)** - Modelos de lenguaje avanzados
 - 🔍 **[Crossref](https://www.crossref.org/)** - Metadatos académicos globales
 
-## 📞 Soporte y Comunidad
-
-### 💬 **¿Necesitas ayuda?**
-- 🐛 **Bugs**: [Reportar issue](https://github.com/KernyMC/PaperMind/issues)
-- 💡 **Sugerencias**: [Discussions](https://github.com/KernyMC/PaperMind/discussions)
-- 📧 **Contacto directo**: papermind@kernels.dev
-
 ### 🌟 **¡Síguenos!**
 - ⭐ **Dale estrella** al proyecto si te resulta útil
 - 🐦 **Comparte** en redes sociales
