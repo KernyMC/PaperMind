@@ -307,24 +307,9 @@ PaperMind no sería posible sin estas increíbles tecnologías:
 - 🧠 **[OpenAI](https://openai.com/)** - Modelos de lenguaje avanzados
 - 🔍 **[Crossref](https://www.crossref.org/)** - Metadatos académicos globales
 
-### 🌟 **¡Síguenos!**
-- ⭐ **Dale estrella** al proyecto si te resulta útil
-- 🐦 **Comparte** en redes sociales
-- 📢 **Recomienda** a colegas investigadores
-
----
-
-<div align="center">
-
-<<<<<<< HEAD
-### 🚀 **PaperMind v1.0** 
-*Potenciando la investigación académica con IA desde 2024*
-
-**Desarrollado con ❤️ para la comunidad académica mundial**
-
-[🌟 Star](https://github.com/KernyMC/PaperMind) | [🐛 Issues](https://github.com/KernyMC/PaperMind/issues) | [💡 Discussions](https://github.com/KernyMC/PaperMind/discussions) | [📖 Docs](https://github.com/KernyMC/PaperMind/wiki)
 
 </div> 
 =======
 ⭐ **¡Si este proyecto te resulta útil, dale una estrella!** 
 >>>>>>> 1ba901e4e1cf21318a3f1ba094b04cde14466dcd
+
